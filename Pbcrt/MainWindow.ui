@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1144</width>
+    <height>938</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_3">
+    <item row="0" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout_3" stretch="4,1">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_6" stretch="6">
+        <item>
+         <widget class="QGroupBox" name="gBoxImages">
+          <property name="title">
+           <string>图像信息</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout">
+           <item row="0" column="0">
+            <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,1">
+             <item>
+              <widget class="QLabel" name="qLabelSrcImage">
+               <property name="minimumSize">
+                <size>
+                 <width>30</width>
+                 <height>20</height>
+                </size>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::Shape::Box</enum>
+               </property>
+               <property name="text">
+                <string>原始图像显示</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignmentFlag::AlignCenter</set>
+               </property>
+               <property name="margin">
+                <number>0</number>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="qLabelResImage">
+               <property name="minimumSize">
+                <size>
+                 <width>30</width>
+                 <height>20</height>
+                </size>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::Shape::Box</enum>
+               </property>
+               <property name="text">
+                <string>处理图像显示</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignmentFlag::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_8" stretch="6,2">
+        <item>
+         <widget class="QTableWidget" name="qTableYoloRes"/>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_2" stretch="10">
+          <item>
+           <widget class="QGroupBox" name="groupBox">
+            <property name="title">
+             <string>Network信息</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_4">
+             <item row="0" column="0">
+              <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="2,7">
+               <item>
+                <widget class="QLabel" name="label_4">
+                 <property name="text">
+                  <string>本地IPV4</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="qLineEditLocalIpv4">
+                 <property name="text">
+                  <string>192.168.200.100</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="1" column="0">
+              <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="2,7">
+               <item>
+                <widget class="QLabel" name="label_5">
+                 <property name="text">
+                  <string>本地端口</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="qLineEditLocalPort">
+                 <property name="text">
+                  <string>12021</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="2" column="0">
+              <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="2,7">
+               <item>
+                <widget class="QLabel" name="label_6">
+                 <property name="text">
+                  <string>设备IPV4</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="qLineEditRemoteIpv4">
+                 <property name="text">
+                  <string>192.168.200.200</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="3" column="0">
+              <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="2,7">
+               <item>
+                <widget class="QLabel" name="label_7">
+                 <property name="text">
+                  <string>设备端口</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="qLineEditRemotePort">
+                 <property name="text">
+                  <string>12020</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="4" column="0">
+              <layout class="QHBoxLayout" name="horizontalLayout_7">
+               <item>
+                <spacer name="horizontalSpacer">
+                 <property name="orientation">
+                  <enum>Qt::Orientation::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item>
+                <widget class="QPushButton" name="qButtonDeleteTableRow">
+                 <property name="text">
+                  <string>删除记录</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="qButtonUdpNetConn">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>设备连接</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="qButtonGetImage">
+                 <property name="text">
+                  <string>获取图像</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1144</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="appSettingMenu">
+    <property name="title">
+     <string>设置</string>
+    </property>
+    <addaction name="imgOutPathConfigAction"/>
+   </widget>
+   <addaction name="appSettingMenu"/>
+  </widget>
+  <action name="actionAppConfigSava">
+   <property name="text">
+    <string>保存</string>
+   </property>
+  </action>
+  <action name="actionAppConfigSavaAs">
+   <property name="text">
+    <string>另存为</string>
+   </property>
+  </action>
+  <action name="imgOutPathConfigAction">
+   <property name="text">
+    <string>选择输出路径</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

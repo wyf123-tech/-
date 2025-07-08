@@ -1,0 +1,11 @@
+
+train: ../images/train     
+val: ../images/val         
+nc: 6                  
+names:
+  0: damaged
+  1: birddrop
+  2: leaf
+  3: sandy
+  4: snow
+  5: hotspot
